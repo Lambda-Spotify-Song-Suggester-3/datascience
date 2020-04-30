@@ -81,8 +81,8 @@ def epic_predictor(input_track_key):
 
 #testing
 
-toxic_track_key = 119347
-epic_predictor(toxic_track_key)
+#toxic_track_key = 119347
+#epic_predictor(toxic_track_key)
 
 ## You can use this to print out the artist name and track name of the list of hashes generated.
 #print(dictionary[dictionary['track_id']=='4fbaKWFRghusXd4bSBvvfN'])
@@ -175,7 +175,5 @@ def feature_average(input_track_key):
 #[acousticness, danceability, energy, instrumentalness, liveness, mode, speechiness, valence]
 
 
-toxic_track_key = 119347
-feature_average(toxic_track_key)
-
-[0.14, 0.79, 0.71, 0.0, 0.12, 0.7, 0.05, 0.65]
+#toxic_track_key = 119347
+#feature_average(toxic_track_key)
