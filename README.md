@@ -7,7 +7,7 @@ Machine Learning Engineers:
 We experimented with several models before utilizing K-Nearest Neighbors to find which songs would best match with the user’s preference based on their selected input song. 
 
 **Model 1 : A Neural Network Approach**  
-*file : model.h5*
+*file : models/model.h5*
 
 If you load our pretrained model, you'll be able to use a NN. This model was trained on the embeddings of the song and artist features. The weights extracted from the model are used to find similar songs. Problems with this model: We were not able to capture all the features in the data, and only trained on 10,000 songs. 
 
@@ -19,7 +19,7 @@ model.summary()
 
 
 **Model 2 : Using Cosine Similarity**  
-*file : cosine_similarity_recommender.py*
+*file : models/cosine_similarity_recommender.py*
 
 With the sklearn cosine_similarity() function we were able to visually see the relationship between each song in a matrix. By isolating one song (row) in the "Y" parameter, we were able to reduce RAM allowing us the ability to use the entire dataset of over 130k songs.
 
@@ -30,7 +30,7 @@ top = matrix[0].sort_values(ascending=False)[:10]
 ```
 
 **Model 3 : Implementing K-Nearest Neighbors**  
-*file : nearest_neighbors_recommender.py*
+*file : models/nearest_neighbors_recommender.py*
 
 With over a hundred thousand songs to choose from, we decided to use the extremely fast KNN (K Nearest Neighbors) architecture to find the most similar songs. The song features literally decide which other songs are closest to it.
 
