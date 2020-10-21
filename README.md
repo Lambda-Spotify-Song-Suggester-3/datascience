@@ -41,3 +41,6 @@ neighbor_predictions = nn.kneighbors([df[404]])
 ```
 
 The file above contains two helper functions used to calculate a playlist of ten similar songs ```epic_predictor(input_track_key)``` and return the average of eight features from the  generated playlist ```feature_average(input_track_key)```.
+
+
+Deployed site: https://deeptunes.now.sh/
